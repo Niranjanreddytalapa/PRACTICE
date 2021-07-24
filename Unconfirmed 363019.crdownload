@@ -1,0 +1,127 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[1]:
+
+
+pwd[]
+
+
+# In[3]:
+
+
+fopen=open('data.txt','w')
+fw=fopen.write("good evening")
+print(fw)
+fopen.close
+
+
+# In[4]:
+
+
+fadd=open('data.txt','a')
+fa=fadd.write("good evening\n"*10)
+fadd.close()
+
+
+# In[7]:
+
+
+fread=open('data.txt','r')
+fr=fread.read()
+print(fr)
+fread.close
+
+
+# In[8]:
+
+
+fread=open('data.txt','r')
+fr=fread.readlines()
+print(fr)
+fread.close
+
+
+# In[11]:
+
+
+with open('data1.txt','w') as ds:
+    ff = ds.write("Good Evening Everyone")
+    print(ff)
+    ds.close()
+
+
+# In[13]:
+
+
+with open('data.txt','r') as ng:
+    k = ng.read()
+    cnt = 1
+    for i in ng:
+        if i == "\n":
+            print(i)
+            cnt = cnt+1
+            print(cnt)
+
+
+# In[17]:
+
+
+fread=open('data.txt','r')
+fr=fread.read()
+print(fr)
+fread.close
+
+
+# In[16]:
+
+
+with open('data.txt','r') as ng:
+    k = ng.read()
+    cnt = 1
+    for i in k:
+        if i == "\n":
+            cnt = cnt+1
+    print(cnt)
+    
+
+
+# In[18]:
+
+
+fread=open('data.txt','r')
+fr=fread.read()
+print(fr)
+fread.close
+
+
+# In[19]:
+
+
+with open('data.txt','r') as ng:
+    k = ng.read()
+    cnt = 1
+    wc=1
+    for i in k:
+        if i == "\n":
+            cnt = cnt+1
+            wc=k.split()
+    print("Number of lines in a file",cnt)
+    print("number of words in file",len(wc))
+    print("nuber of chr in file",len(k))
+
+
+# In[21]:
+
+
+f = open('data.txt','r')
+for i in range(1,101):
+    f.write('182U1A04G5'+str(i)+'\n')
+    f.close()
+
+
+# In[ ]:
+
+
+
+
